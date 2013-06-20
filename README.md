@@ -15,14 +15,14 @@ Trigger creates a small WEBrick server which, when you GET /, automatically
 rebuilds and redeploys.  The manual trigger is the one you generally access from
 the command line; it's exposed as `kibble deploy`.
 
-## Cans
+### Cans
 Cans are the next step in a Kibble build process.  They represent the source
 feeds of data.  They may come in gems or be placed in the `cans/` directory and 
 loaded (and configured) in `config/cans.rb`.  Kibble comes preloaded with one
 Can, `Kibble::Blog` &mdash; a basic markdown-powered git-fueled blogging engine,
 completely (and shamelessly) ripping off the Jekyll concept.
 
-## Bowls
+### Bowls
 Bowls are the final step, the output.  They take the time-sorted array of 
 objects we got from the cans, and generate some way of displaying the results. 
 Kibble's default configuration uses an ERB-based Bowl, but others are available
